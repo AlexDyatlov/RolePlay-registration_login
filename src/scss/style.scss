@@ -96,6 +96,22 @@
     }
   }
 }
+.registration__form-validation{
+  &:required:valid{
+    background-image: url('../images/icons/validation.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: right 40px center;
+  }
+}
+.registration__form-validation--active{
+  position: relative;
+  margin-right: 40px;
+  margin-left: auto;
+  width: 40px;
+  height: 0;
+  top: -71px;
+}
 .btn{
   width: 100%;
   height: 63px;
@@ -120,6 +136,9 @@
   right: 115px;
   top: 21px;
 }
+.login__form-btn:disabled{
+  cursor: not-allowed;
+}
 .login__box{
   display: flex;
   justify-content: space-between;
@@ -127,9 +146,11 @@
   &-text{
     color: rgba(239, 239, 239, 0.412);
     font-size: 17px;
+    margin-right: 25px;
   }
   &-link{
     cursor: pointer;
+    margin-right: 0;
     &:hover{
       color: rgba(239, 239, 239, 0.231);
     }
@@ -155,10 +176,47 @@
     }
   }
 }
-
-
-
-
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .checkmark{
+     background: center / cover no-repeat url('../images/icons/bg.png');
+    }
+    &:checked ~ .checkmark::after{
+      display: block;
+    }
+  }
+  .checkmark::after{
+    background: center / cover no-repeat url('../images/icons/validation.png');
+    width: 29px;
+    height: 26px;
+    right: -3px;
+  }
+}
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: center / cover no-repeat url('../images/icons/bg.png');
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
 
 
 @import 'media';
