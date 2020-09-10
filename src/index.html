@@ -5,7 +5,66 @@
 <body>
   @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-
+  <main class="page" style="background-image: url('images/bg.png');">
+    <div class="container">
+      <div class="page__inner">
+        <div class="authentication__sidebar tabs-wrapper">
+          <a class="tab authentication__sidebar-title tab--active" href="#tab-1">
+            რეგისტრაცია
+          </a>
+          <a class="tab authentication__sidebar-title" href="#tab-2">
+            შესვლა
+          </a>
+        </div>
+        <div class="page__content">
+          <div id="tab-1" class="tabs-content tabs-content--active">
+            <form class="registration__form">
+              <div class="registration__form-title">ლოგინი</div>
+              <input class="registration__form-input" type="text" placeholder="mikerobox" required>
+              <div class="registration__form-title">ლოგინი</div>
+              <input class="registration__form-input" type="email" placeholder="mikerobox@mike.com" required>
+              <div class="registration__form-title">პაროლი</div>
+              <input class="registration__form-input" type="text" placeholder="****" required>
+              <div class="registration__form-title">პაროლის დადასტურება</div>
+              <input class="registration__form-input" type="text" placeholder="****" required>
+              <button class="registration__form-btn btn" type="submit">რეგისტრაცია</button>
+            </form>
+          </div>
+          <div id="tab-2" class="tabs-content">
+            <form class="login__form">
+              <div class="login__form-title">ლოგინი</div>
+              <input class="login__form-input" type="text" placeholder="mikerobox" required>
+              <div class="login__form-title">პაროლი</div>
+              <input class="login__form-input" type="text" placeholder="****" required>
+              <div class="login__box">
+                <input class="login__box-checkbox" type="checkbox" id="checkbox">
+                <div class="login__box-text">დამახსოვრება</div>
+                <a class="login__box-text login__box-link" href="#">დაგავიწყდა პაროლი?</a>
+              </div>
+              <button class="login__form-btn btn" type="submit">შესვლა</button>
+            </form>
+            <div class="login__description">
+              პრობლემის ქონის შემთხვევაში დაუკავშირდით ადმინისტრაციას, ან გახსენით ახალი საჩივარი ფორუმზე: ტექნიკურ
+              განყოფილებაში. პატივისცემით ადმინისტრაცია
+            </div>
+          </div>
+          <!-- <img src="images/hype.png" alt=""> -->
+        </div>
+      </div>
+      <div class="social__icons">
+        <a class="social__icons-icon" href="#">
+          <img src="images/icons/youtube.svg" alt="">
+        </a>
+        <a class="social__icons-icon" href="#">
+          <img src="images/icons/facebook.svg" alt="">
+        </a>
+        <a class="social__icons-icon" href="#">
+          <img src="images/icons/discord.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </main>
+  
   <!-- STOP WRITE CODE -->
   @@include('components/_footer.html')
   @@include('components/_scripts.html')
