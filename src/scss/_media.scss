@@ -22,6 +22,13 @@
   .social__icons {
     margin-top: 25px;
   }
+  .personage{
+    padding: 200px 0 130px;
+  }
+  .new__page-btn{
+    left: 12%;
+    bottom: -3%;
+  }
 }
 @media (max-width: 1370px){
   .page{
@@ -44,7 +51,8 @@
     }
   }
   .social__icons {
-    margin-top: 0px;
+    margin-top: -5px;
+    margin-left: 43%;
   }
   .authentication__sidebar {
     margin-bottom: 30px;
@@ -55,5 +63,124 @@
   .login__form-title,
   .registration__form-title {
     margin-bottom: 15px;
+  }
+  .personage {
+    padding: 80px 0 45px;
+  }
+  .personage__stat{
+    max-width: 360px;
+    min-height: 480px;
+    padding: 40px 0 45px;
+    &-title{
+      margin: 0 auto 40px;
+    }
+    &-button{
+      bottom: -15%;
+    }
+  }
+  .personage__list-item{
+    padding: 9px 0 10px 30px;
+  }
+  .money__box{
+    flex-direction: column;
+    margin-top: 40px;
+    &-cache{
+      margin: 0 auto 10px;
+      width: 100px;
+      padding-left: 0;
+      &::before{
+        left: -39px;
+      }
+    }
+    &-bank{
+      margin: 0 auto;
+      width: 100px;
+    }
+  }
+  .personage__card{
+    max-width: 300px;
+    &-lvl{
+      font-size: 20px;
+      width: 45px;
+      height: 45px;
+      padding: 10px 3px 0 0;
+    }
+    &-create{
+      height: 60px;
+      padding-top: 21px;
+      &::before{
+        left: 25px;
+        top: 14px;
+      }
+    }
+    &-item{
+      padding: 0 25px 0 80px;
+      height: 100px;
+      &::before{
+        left: 25px;
+        top: 33px;
+        width: 30px;
+        height: 38px;
+      }
+    }
+  }
+  .personage__option-btn{
+    bottom: 45px;
+    width: 290px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .create__content{
+    width: 470px;
+    min-height: 510px;
+    &::before{
+      top: 25px;
+      width: 215px;
+      height: 455px;
+    }
+  }
+  .popup__inner{
+    &-btn{
+      margin-bottom: 60px;
+      height: 45px;
+    }
+  }
+  .create__inner{
+    width: 375px;
+    min-height: 510px;
+    padding: 80px 30px 25px;
+    &-title{
+      width: 160px;
+      margin-bottom: 45px;
+    }
+    input{
+      height: 45px;
+      padding: 0 50px;
+    }
+  }
+  .delete__content{
+    width: 500px;
+    height: 440px;
+    padding: 60px 30px 0 0;
+    &::before{
+      width: 310px;
+      height: 345px;
+    }
+  }
+  .popup__inner{
+    width: 340px;
+    height: 380px;
+    padding: 45px 30px 20px;
+    &-title{
+      width: 175px;
+      margin-bottom: 50px;
+    }
+    &-btn{
+      margin-bottom: 45px;
+    }
+  }
+  .new__page-btn{
+    left: 17.5%;
+    bottom: -12%;
   }
 }
