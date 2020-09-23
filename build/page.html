@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+  </head>
+
+<body>
+  <header>
+
+</header>
+  <div class="personage" style="background-image: url('images/personage-bg.png');">
+    <div class="new-container">
+      <div class="personage__inner">
+        <div class="personage__stat">
+          <div class="personage__stat-title">პერსონაჟის სტატისტიკა</div>
+          <ul class="personage__list">
+            <li class="personage__list-item">
+              სახელი: <span>Mike_Robox</span>
+            </li>
+            <li class="personage__list-item">
+              სტატუსი: <span>მოთამაშე</span>
+            </li>
+            <li class="personage__list-item">
+              ნათამაშები დრო: <span>40 საათი</span>
+            </li>
+            <li class="personage__list-item">
+              ლეველი: <span>17</span>
+            </li>
+            <li class="personage__list-item">
+              ორგანიზაცია: <span>Bloods Gang</span>
+            </li>
+          </ul>
+          <div class="money__box">
+            <div class="money__box-cache">151424$</div>
+            <div class="money__box-bank">231424$</div>
+          </div>
+          <a class="personage__button personage__stat-button" data-fancybox data-src="#delete" data-modal="true" href="javascript:;">
+            პერსონაჟის წაშლა
+          </a>
+        </div>
+        <div class="personage__card">
+          <div class="personage__top">
+            <div class="personage__top-title">Mike, თქვენ გაქვთ:</div>
+            <div class="personage__top-coins">10.000</div>
+          </div>
+          <button class="personage__card-item" type="button">
+            <div class="personage__card-name">Mike Robox</div>
+            <div class="personage__card-lvl">15</div>
+          </button>
+          <button class="personage__card-item" type="button">
+            <div class="personage__card-name">Mike Robox</div>
+            <div class="personage__card-lvl">15</div>
+          </button>
+          <a class="personage__card-create" data-fancybox data-src="#create" data-modal="true" href="javascript:;">
+            პერსონაჟის შექმნა
+          </a>
+        </div>
+      </div>
+      <button class="personage__option-btn" type="button">არჩევა</button>
+    </div>
+  </div>
+  <div id="delete">
+    <div class="delete__content">
+      <div class="popup__inner">
+        <div class="popup__inner-title">პერსონაჟის წაშლა</div>
+        <form class="popup__inner-form">
+          <input class="popup__inner-input" type="text" placeholder="ექაუნთის პაროლი" required>
+          <button class="popup__inner-btn" type="submit">პერსონაჟის წაშლა</button>
+          <button data-fancybox-close class="popup__inner-exit">უკან დაბრუნება</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="create">
+    <div class="create__content">
+      <div class="create__inner">
+        <div class="create__inner-title">პერსონაჟის წაშლა</div>
+        <form class="create__inner-form">
+          <input class="create__inner-input" type="text" placeholder="სახელი" required>
+          <input class="create__inner-input" type="text" placeholder="გვარი" required>
+          <input class="create__inner-input" type="number" min="0" placeholder="წლოვანება" required>
+          <button class="popup__inner-btn" type="submit">შექმნა</button>
+          <button data-fancybox-close class="popup__inner-exit">ფანჯრის დახურვა</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+  
+</footer>
+  <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

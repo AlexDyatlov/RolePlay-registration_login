@@ -38,7 +38,7 @@ $(function(){
           $("#validate-status").html('');
       }
       
-  }
+  } 
 
 });
 
